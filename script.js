@@ -33,7 +33,6 @@ function deleteBtn(){
 var cartIndex
 function editBtn(i){
 cartIndex= i
-inputModal.innerHTML = `${items}`
 
 }
 
@@ -59,10 +58,13 @@ function edit(){
 // function to display results on the screen instad of console
 
 function displayResult(){
+    
     document.getElementById("notAdded").style.display="none"
     document.getElementById("result").style.display="flex"
     document.getElementById("result").innerHTML =''
     cart.map((items, index)=>{
+    document.getElementById('inputModal').value = items
+
         result.innerHTML += `
         
     
