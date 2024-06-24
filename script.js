@@ -72,7 +72,7 @@ function displayResult(){
   <div class="card-body ">
     <h5 class="card-title text-light">${index+1}</h5>
     <p class="card-text" style="color:#E72929;">${items}</p>
-    <button onclick="editBtn(${index})" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fa-solid fa-pen"></i> </button>
+    <button onclick="editBtn(${index})" class="btn btn-warning" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#exampleModal"> <i class="fa-solid fa-pen"></i> </button>
     <button onclick="deleteBtn()" class="btn btn-danger"> <i class="fa-solid fa-trash"></i> </button>
     
   </div>
